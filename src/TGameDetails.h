@@ -35,6 +35,7 @@ struct GameDetail
     QString websiteInfo;
     QString icon;
     QString description;
+    bool autologmein = false;
 };
 
 class TGameDetails
@@ -87,7 +88,8 @@ public:
                  "\n\n"
                  "The Cleft opened in July 2000 and has been in active development ever since. We're "
                  "always innovating. Recent features include Discord integration "
-                 "and areas written with artificial intelligence. Check us out!")},
+                 "and areas written with artificial intelligence. Check us out!"),
+                true},
             };
     // clang-format on
 };
