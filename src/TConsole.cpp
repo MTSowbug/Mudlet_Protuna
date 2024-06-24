@@ -299,7 +299,7 @@ TConsole::TConsole(Host* pH, ConsoleType type, QWidget* parent)
     layoutButtonMainLayer->addWidget(buttonLayerSpacer);
     layoutButtonMainLayer->addWidget(buttonLayer);
 
-    timeStampButton = new QToolButton;
+    /*timeStampButton = new QToolButton;
     timeStampButton->setCheckable(true);
     timeStampButton->setMinimumSize(QSize(30, 30));
     timeStampButton->setMaximumSize(QSize(30, 30));
@@ -308,9 +308,9 @@ TConsole::TConsole(Host* pH, ConsoleType type, QWidget* parent)
     timeStampButton->setToolTip(utils::richText(tr("Show Time Stamps.")));
     timeStampButton->setIcon(QIcon(qsl(":/icons/dialog-information.png")));
     connect(timeStampButton, &QAbstractButton::toggled, mUpperPane, &TTextEdit::slot_toggleTimeStamps);
-    connect(timeStampButton, &QAbstractButton::toggled, mLowerPane, &TTextEdit::slot_toggleTimeStamps);
+    connect(timeStampButton, &QAbstractButton::toggled, mLowerPane, &TTextEdit::slot_toggleTimeStamps);*/
 
-    auto replayButton = new QToolButton;
+    /*auto replayButton = new QToolButton;
     replayButton->setCheckable(true);
     replayButton->setMinimumSize(QSize(30, 30));
     replayButton->setMaximumSize(QSize(30, 30));
@@ -318,7 +318,7 @@ TConsole::TConsole(Host* pH, ConsoleType type, QWidget* parent)
     replayButton->setFocusPolicy(Qt::NoFocus);
     replayButton->setToolTip(utils::richText(tr("Record a replay.")));
     replayButton->setIcon(QIcon(qsl(":/icons/media-tape.png")));
-    connect(replayButton, &QAbstractButton::clicked, this, &TConsole::slot_toggleReplayRecording);
+    connect(replayButton, &QAbstractButton::clicked, this, &TConsole::slot_toggleReplayRecording);*/
 
     logButton = new QToolButton;
     logButton->setMinimumSize(QSize(30, 30));
@@ -362,14 +362,14 @@ TConsole::TConsole(Host* pH, ConsoleType type, QWidget* parent)
         }
     }
 
-    emergencyStop->setMinimumSize(QSize(30, 30));
+    /*emergencyStop->setMinimumSize(QSize(30, 30));
     emergencyStop->setMaximumSize(QSize(30, 30));
     emergencyStop->setIcon(QIcon(qsl(":/icons/edit-bomb.png")));
     emergencyStop->setSizePolicy(sizePolicy4);
     emergencyStop->setFocusPolicy(Qt::NoFocus);
     emergencyStop->setCheckable(true);
     emergencyStop->setToolTip(utils::richText(tr("Emergency Stop. Stops all timers and triggers.")));
-    connect(emergencyStop, &QAbstractButton::clicked, this, &TConsole::slot_stopAllItems);
+    connect(emergencyStop, &QAbstractButton::clicked, this, &TConsole::slot_stopAllItems);*/
 
     mpBufferSearchBox->setMinimumSize(QSize(100, 30));
     mpBufferSearchBox->setMaximumSize(QSize(150, 30));
@@ -414,13 +414,13 @@ TConsole::TConsole(Host* pH, ConsoleType type, QWidget* parent)
     connect(mpBufferSearchUp, &QAbstractButton::clicked, this, &TConsole::slot_searchBufferUp);*/ //TUNARK
 
 
-    mpBufferSearchDown->setMinimumSize(QSize(30, 30));
+    /*mpBufferSearchDown->setMinimumSize(QSize(30, 30));
     mpBufferSearchDown->setMaximumSize(QSize(30, 30));
     mpBufferSearchDown->setSizePolicy(sizePolicy5);
     mpBufferSearchDown->setFocusPolicy(Qt::NoFocus);
     mpBufferSearchDown->setToolTip(utils::richText(tr("Later search result.")));
     mpBufferSearchDown->setIcon(QIcon(qsl(":/icons/import.png")));
-    connect(mpBufferSearchDown, &QAbstractButton::clicked, this, &TConsole::slot_searchBufferDown);
+    connect(mpBufferSearchDown, &QAbstractButton::clicked, this, &TConsole::slot_searchBufferDown);*/
 
 
     if (mpCommandLine) {
