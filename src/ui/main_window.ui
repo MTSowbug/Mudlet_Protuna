@@ -112,8 +112,8 @@
      <string>Options</string>
     </property>
     <addaction name="dactionOptions"/>
-    <addaction name="dactionMultiView"/> -->
-   </widget>
+    <addaction name="dactionMultiView"/>
+   </widget> -->
    <!-- <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
