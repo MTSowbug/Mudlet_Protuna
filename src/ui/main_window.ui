@@ -138,11 +138,11 @@
      <string>File</string>
     </property>
     <addaction name="dactionConnect"/>
-    <addaction name="separator"/>
+    <!-- <addaction name="separator"/> -->
     <addaction name="dactionDisconnect"/>
-    <addaction name="dactionReconnect"/>
-    <addaction name="separator"/>
-    <addaction name="dactionCloseProfile"/>
+    <!-- <addaction name="dactionReconnect"/> -->
+    <!-- <addaction name="separator"/>
+    <addaction name="dactionCloseProfile"/> -->
    </widget>
    <addaction name="menuGames"/>
    <addaction name="menuEditor"/>
@@ -152,7 +152,7 @@
   </widget>
   <action name="dactionConnect">
    <property name="text">
-    <string>Play</string>
+    <string>Connect</string>
    </property>
    <property name="toolTip">
     <string>&lt;p&gt;Configure connection details of, and make a connection to, game servers.&lt;/p&gt;</string>
