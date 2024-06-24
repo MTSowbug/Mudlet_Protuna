@@ -2529,11 +2529,10 @@ void mudlet::startAutoLogin(const QStringList& cliProfiles)
 
     for (auto& hostName : hostList) {
         QString val = readProfileData(hostName, qsl("autologin"));
-        //Ignore settings and always autologin -MTS 2024/06/24
-        //if (val.toInt() == Qt::Checked) {
+        if (val.toInt() == Qt::Checked) {
             doAutoLogin(hostName);
             openedProfile = true;
-        //}
+        }
     }
 
     if (!openedProfile) {
