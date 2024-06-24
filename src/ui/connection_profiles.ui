@@ -755,7 +755,7 @@
                  <verstretch>0</verstretch>
                 </sizepolicy>
                </property>
-               <!-- <property name="toolTip">
+               <property name="toolTip">
                 <string>With this enabled, Mudlet will automatically start and connect on this profile when it is launched</string>
                </property>
                <property name="accessibleName">
@@ -763,13 +763,12 @@
                </property>
                <property name="accessibleDescription">
                 <string>Automatically start this profile when Mudlet is run</string>
-               </property> -->
+               </property>
                <property name="layoutDirection">
                 <enum>Qt::LeftToRight</enum>
                </property>
                <property name="text">
-                <!-- <string>Open profile on Mudlet start</string>  -->
-                <string>defunct</string> 
+                <string>Open profile on Mudlet start</string> 
                </property>
               </widget>
              </item>
