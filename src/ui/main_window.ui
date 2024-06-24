@@ -135,7 +135,7 @@
    </widget> --> <!-- Tunark -->
    <widget class="QMenu" name="menuGames">
     <property name="title">
-     <string>Games</string>
+     <string>File</string>
     </property>
     <addaction name="dactionConnect"/>
     <addaction name="separator"/>
