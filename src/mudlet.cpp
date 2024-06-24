@@ -2515,7 +2515,7 @@ void mudlet::startAutoLogin(const QStringList& cliProfiles)
 {
     QStringList hostList = QDir(getMudletPath(profilesPath)).entryList(QDir::Dirs | QDir::NoDotAndDotDot, QDir::Name);
     hostList += TGameDetails::keys();
-    hostList << qsl("Mudlet self-test");
+    //hostList << qsl("Mudlet self-test");
     hostList.removeDuplicates();
     bool openedProfile = false;
 
@@ -2529,10 +2529,10 @@ void mudlet::startAutoLogin(const QStringList& cliProfiles)
 
     for (auto& hostName : hostList) {
         QString val = readProfileData(hostName, qsl("autologin"));
-        if (val.toInt() == Qt::Checked) {
+        //if (val.toInt() == Qt::Checked) {
             doAutoLogin(hostName);
             openedProfile = true;
-        }
+        //}
     }
 
     if (!openedProfile) {
