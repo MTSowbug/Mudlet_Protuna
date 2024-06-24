@@ -593,17 +593,17 @@ void TMap::audit()
         itArea.value()->mIsDirty = false;
     }
 
-    { // Blocked - just to limit the scope of infoMsg...!
-        QString infoMsg = tr("[  OK  ]  - Auditing of map completed (%1s). Enjoy your game...").arg(_time.nsecsElapsed() * 1.0e-9, 0, 'f', 2);
-        postMessage(infoMsg);
-        appendErrorMsg(infoMsg);
-    }
+    //{ // Blocked - just to limit the scope of infoMsg...!
+    //    QString infoMsg = tr("[  OK  ]  - Auditing of map completed (%1s). Enjoy your game...").arg(_time.nsecsElapsed() * 1.0e-9, 0, 'f', 2);
+    //    postMessage(infoMsg);
+    //    appendErrorMsg(infoMsg);
+   // }
 
     auto loadTime = mpHost->getLuaInterpreter()->condenseMapLoad();
-    if (loadTime != -1.0) {
-        QString msg = tr("[  OK  ]  - Map loaded successfully (%1s).").arg(loadTime);
-        postMessage(msg);
-    }
+    //if (loadTime != -1.0) {
+    //    QString msg = tr("[  OK  ]  - Map loaded successfully (%1s).").arg(loadTime);
+    //    postMessage(msg);
+    //}
 }
 
 QList<int> TMap::detectRoomCollisions(int id)
