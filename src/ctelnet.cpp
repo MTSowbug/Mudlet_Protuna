@@ -2016,9 +2016,9 @@ void cTelnet::setGMCPVariables(const QByteArray& msg)
 
         // If the client does not have the GUI or the current version it will be downloaded from the url.
         if (mpHost->mServerGUI_Package_version != version) {
-            postMessage(tr("[ INFO ]  - The server wants to upgrade the GUI to new version '%1'.\n"
-                           "Uninstalling old version '%2'.")
-                        .arg(version, mpHost->mServerGUI_Package_version != qsl("-1") ? mpHost->mServerGUI_Package_version : qsl("(unknown)")));
+            //postMessage(tr("[ INFO ]  - The server wants to upgrade the GUI to new version '%1'.\n"
+            //               "Uninstalling old version '%2'.")
+            //            .arg(version, mpHost->mServerGUI_Package_version != qsl("-1") ? mpHost->mServerGUI_Package_version : qsl("(unknown)")));
             // uninstall by previous known package name or current if we don't
             // know it (in case of manual installation)
             mpHost->uninstallPackage(mpHost->mServerGUI_Package_name != qsl("nothing") ? mpHost->mServerGUI_Package_name : packageName, 0);
