@@ -112,7 +112,7 @@
     <addaction name="dactionOptions"/>
     <addaction name="dactionMultiView"/>
    </widget>
-   <widget class="QMenu" name="menuHelp">
+   <!-- <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
     </property>
@@ -122,7 +122,7 @@
     <addaction name="dactionMudletDiscord"/>
     <addaction name="dactionIRC"/>
     <addaction name="dactionForum"/>
-   </widget>
+   </widget> -->
    <!-- <widget class="QMenu" name="menuAbout">
     <property name="title">
      <string>About</string>
