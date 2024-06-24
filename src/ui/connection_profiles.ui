@@ -747,7 +747,7 @@
                </property>
               </widget>
              </item>
-             <!-- <item row="4" column="0" colspan="2">
+             <item row="4" column="0" colspan="2">
               <widget class="QCheckBox" name="autologin_checkBox">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
@@ -755,7 +755,7 @@
                  <verstretch>0</verstretch>
                 </sizepolicy>
                </property>
-               <property name="toolTip">
+               <!-- <property name="toolTip">
                 <string>With this enabled, Mudlet will automatically start and connect on this profile when it is launched</string>
                </property>
                <property name="accessibleName">
@@ -763,16 +763,17 @@
                </property>
                <property name="accessibleDescription">
                 <string>Automatically start this profile when Mudlet is run</string>
-               </property>
+               </property> -->
                <property name="layoutDirection">
                 <enum>Qt::LeftToRight</enum>
                </property>
                <property name="text">
-                <string>Open profile on Mudlet start</string> 
+                <!-- <string>Open profile on Mudlet start</string>  -->
+                <string>defunct</string> 
                </property>
               </widget>
-             </item> -->
-             <item row="4" column="0" colspan="2">
+             </item>
+             <item row="5" column="0" colspan="2">
               <widget class="QCheckBox" name="auto_reconnect">
                <property name="accessibleName">
                 <string>Auto-reconnect</string>
