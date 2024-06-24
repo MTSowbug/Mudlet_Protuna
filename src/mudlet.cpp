@@ -4621,9 +4621,10 @@ void mudlet::setupPreInstallPackages(const QString& gameUrl)
         }
     }
 
-    if (!mudlet::self()->mPackagesToInstallList.contains(qsl(":/mudlet-mapper.xml"))) {
-        mudlet::self()->mPackagesToInstallList.append(qsl(":/mudlet-lua/lua/generic-mapper/generic_mapper.xml"));
-    }
+    // decluttering -MTS 2024/06/24
+    //if (!mudlet::self()->mPackagesToInstallList.contains(qsl(":/mudlet-mapper.xml"))) {
+    //    mudlet::self()->mPackagesToInstallList.append(qsl(":/mudlet-lua/lua/generic-mapper/generic_mapper.xml"));
+    //}
 }
 
 // Referenced from github.com/keepassxreboot/keepassxc. Licensed under GPL2/3.
