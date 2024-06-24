@@ -428,14 +428,14 @@ TConsole::TConsole(Host* pH, ConsoleType type, QWidget* parent)
     }
 
     layoutLayer2->addWidget(mpButtonMainLayer);
-    layoutButtonLayer->addWidget(mpBufferSearchBox, 0, 0, 0, 4);
-    layoutButtonLayer->addWidget(mpBufferSearchUp, 0, 5);
-    layoutButtonLayer->addWidget(mpBufferSearchDown, 0, 6);
-    layoutButtonLayer->addWidget(timeStampButton, 0, 7);
-    layoutButtonLayer->addWidget(replayButton, 0, 8);
-    layoutButtonLayer->addWidget(logButton, 0, 9);
-    layoutButtonLayer->addWidget(emergencyStop, 0, 10);
-    layoutButtonLayer->addWidget(mpLineEdit_networkLatency, 0, 11);
+    //layoutButtonLayer->addWidget(mpBufferSearchBox, 0, 0, 0, 4);
+    //layoutButtonLayer->addWidget(mpBufferSearchUp, 0, 5);
+    //layoutButtonLayer->addWidget(mpBufferSearchDown, 0, 6);
+    //layoutButtonLayer->addWidget(timeStampButton, 0, 7);
+    //layoutButtonLayer->addWidget(replayButton, 0, 8);
+    //layoutButtonLayer->addWidget(logButton, 0, 9);
+    //layoutButtonLayer->addWidget(emergencyStop, 0, 10);
+    //layoutButtonLayer->addWidget(mpLineEdit_networkLatency, 0, 11);
     layoutLayer2->setContentsMargins(0, 0, 0, 0);
     layout->addWidget(layer);
     mpLineEdit_networkLatency->setFrame(false);
