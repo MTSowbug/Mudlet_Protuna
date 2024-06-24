@@ -524,8 +524,8 @@ void TMap::audit()
     _time.start();
 
     { // Blocked - just to limit the scope of infoMsg...!
-        QString infoMsg = tr("[ INFO ]  - Map audit starting...");
-        postMessage(infoMsg);
+        // QString infoMsg = tr("[ INFO ]  - Map audit starting...");
+        // postMessage(infoMsg);
     }
 
     // The old mpRoomDB->initAreasForOldMaps() was a subset of these checks
@@ -1849,12 +1849,12 @@ bool TMap::restore(QString location, bool downloadIfNotFound)
 
         restore16ColorSet();
 
-        QString okMsg = tr("[ INFO ]  - Successfully read the map file (%1s), checking some\n"
-                           "consistency details..." )
-                                .arg(_time.nsecsElapsed() * 1.0e-9, 0, 'f', 2);
+        // QString okMsg = tr("[ INFO ]  - Successfully read the map file (%1s), checking some\n"
+        //                    "consistency details..." )
+        //                         .arg(_time.nsecsElapsed() * 1.0e-9, 0, 'f', 2);
 
-        postMessage(okMsg);
-        appendErrorMsgWithNoLf(okMsg);
+        //postMessage(okMsg);
+        //appendErrorMsgWithNoLf(okMsg);
         if (canRestore) {
             return true;
         }
