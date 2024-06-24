@@ -169,7 +169,7 @@ mudlet::mudlet()
     setContentsMargins(0, 0, 0, 0);
     menuGames->setToolTipsVisible(true);
     menuEditor->setToolTipsVisible(true);
-    menuOptions->setToolTipsVisible(true);
+    //menuOptions->setToolTipsVisible(true);
     //menuHelp->setToolTipsVisible(true);
     //menuAbout->setToolTipsVisible(true);
 
