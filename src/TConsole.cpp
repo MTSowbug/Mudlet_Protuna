@@ -405,13 +405,13 @@ TConsole::TConsole(Host* pH, ConsoleType type, QWidget* parent)
     mpAction_searchOptions->setMenu(pMenu_searchOptions);
     mpBufferSearchBox->addAction(mpAction_searchOptions, QLineEdit::LeadingPosition);
 
-    mpBufferSearchUp->setMinimumSize(QSize(30, 30));
+    /*mpBufferSearchUp->setMinimumSize(QSize(30, 30));
     mpBufferSearchUp->setMaximumSize(QSize(30, 30));
     mpBufferSearchUp->setSizePolicy(sizePolicy5);
     mpBufferSearchUp->setToolTip(utils::richText(tr("Earlier search result.")));
     mpBufferSearchUp->setFocusPolicy(Qt::NoFocus);
     mpBufferSearchUp->setIcon(QIcon(qsl(":/icons/export.png")));
-    connect(mpBufferSearchUp, &QAbstractButton::clicked, this, &TConsole::slot_searchBufferUp);
+    connect(mpBufferSearchUp, &QAbstractButton::clicked, this, &TConsole::slot_searchBufferUp);*/ //TUNARK
 
 
     mpBufferSearchDown->setMinimumSize(QSize(30, 30));
