@@ -1664,7 +1664,7 @@ void cTelnet::processTelnetCommand(const std::string& telnetCommand)
 
                 // postMessage(tr("[ INFO ]  - Server offers downloadable GUI (url='%1') (package='%2').").arg(url, packageName));
                 if (mpHost->mInstalledPackages.contains(packageName)) {
-                    postMessage(tr("[  OK  ]  - Package is already installed."));
+                    // postMessage(tr("[  OK  ]  - Package is already installed."));
                     return;
                 }
 
