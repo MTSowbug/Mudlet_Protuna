@@ -92,7 +92,8 @@
    </property>
    <widget class="QMenu" name="menuEditor">
     <property name="title">
-     <string>Toolbox</string>
+     <!-- <string>Toolbox</string>  -->
+    <string>Tools</string>
     </property>
     <addaction name="dactionScriptEditor"/>
     <addaction name="dactionShowErrors"/>
@@ -104,13 +105,14 @@
     <addaction name="dactionReplay"/>
     <addaction name="dactionModuleManager"/>
     <addaction name="dactionPackageExporter"/>
+    <addaction name="dactionOptions"/>
    </widget>
-   <widget class="QMenu" name="menuOptions">
+   <!-- <widget class="QMenu" name="menuOptions">
     <property name="title">
      <string>Options</string>
     </property>
     <addaction name="dactionOptions"/>
-    <addaction name="dactionMultiView"/>
+    <addaction name="dactionMultiView"/> -->
    </widget>
    <!-- <widget class="QMenu" name="menuHelp">
     <property name="title">
