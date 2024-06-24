@@ -747,7 +747,7 @@
                </property>
               </widget>
              </item>
-             <item row="4" column="0" colspan="2">
+             <!-- <item row="4" column="0" colspan="2">
               <widget class="QCheckBox" name="autologin_checkBox">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
@@ -768,11 +768,11 @@
                 <enum>Qt::LeftToRight</enum>
                </property>
                <property name="text">
-                <string>Open profile on Mudlet start</string>
+                <string>Open profile on Mudlet start</string> 
                </property>
               </widget>
-             </item>
-             <item row="5" column="0" colspan="2">
+             </item> -->
+             <item row="4" column="0" colspan="2">
               <widget class="QCheckBox" name="auto_reconnect">
                <property name="accessibleName">
                 <string>Auto-reconnect</string>
