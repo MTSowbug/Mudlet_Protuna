@@ -2674,7 +2674,7 @@ void mudlet::doAutoLogin(const QString& profile_name)
             pHost->setUrl((*it).hostUrl);
             pHost->setPort((*it).port);
             pHost->mSslTsl = (*it).tlsEnabled;
-            pHost->autologin = (*it).autologmein; //TUNARK
+            //pHost->autologin = (*it).autologmein; //TUNARK
             
         }
     } else {
