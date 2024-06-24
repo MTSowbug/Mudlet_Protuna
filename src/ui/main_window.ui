@@ -123,14 +123,14 @@
     <addaction name="dactionIRC"/>
     <addaction name="dactionForum"/>
    </widget>
-   <widget class="QMenu" name="menuAbout">
+   <!-- <widget class="QMenu" name="menuAbout">
     <property name="title">
      <string>About</string>
     </property>
     <addaction name="dactionAbout"/>
     <addaction name="dactionUpdate"/>
     <addaction name="dactionReportIssue"/>
-   </widget>
+   </widget> --> <!-- Tunark -->
    <widget class="QMenu" name="menuGames">
     <property name="title">
      <string>Games</string>
