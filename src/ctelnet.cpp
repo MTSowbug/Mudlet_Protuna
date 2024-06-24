@@ -381,7 +381,7 @@ void cTelnet::connectIt(const QString& address, int port)
 
     hostName = address;
     hostPort = port;
-    postMessage(tr("[ INFO ]  - Looking up the IP address of server: %1:%2 ...").arg(address, QString::number(port)));
+    // postMessage(tr("[ INFO ]  - Looking up the IP address of server: %1:%2 ...").arg(address, QString::number(port)));
     // don't use a compile-time slot for this: https://bugreports.qt.io/browse/QTBUG-67646
     QHostInfo::lookupHost(address, this, SLOT(slot_socketHostFound(QHostInfo)));
 }
@@ -438,14 +438,14 @@ void cTelnet::slot_socketConnected()
     reset();
     setKeepAlive(socket.socketDescriptor());
 
-    if (mpHost->mSslTsl)
-    {
-        msg = tr("[ INFO ]  - A secure connection has been established successfully.");
-    } else {
-        msg = tr("[ INFO ]  - A connection has been established successfully.");
-    }
-    msg.append(qsl("\n    \n    "));
-    postMessage(msg);
+    //if (mpHost->mSslTsl)
+    //{
+    //    msg = tr("[ INFO ]  - A secure connection has been established successfully.");
+    //} else {
+    //    msg = tr("[ INFO ]  - A connection has been established successfully.");
+    //}
+    //msg.append(qsl("\n    \n    "));
+    //postMessage(msg);
     QString func = "onConnect";
     QString nothing = "";
     mpHost->mLuaInterpreter.call(func, nothing);
@@ -573,7 +573,7 @@ void cTelnet::slot_socketHostFound(QHostInfo hostInfo)
 #endif
         if (!hostInfo.addresses().isEmpty()) {
             mHostAddress = hostInfo.addresses().constFirst();
-            postMessage(qsl("%1\n").arg(tr("[ INFO ]  - The IP address of %1 has been found. It is: %2").arg(hostName, mHostAddress.toString())));
+            //postMessage(qsl("%1\n").arg(tr("[ INFO ]  - The IP address of %1 has been found. It is: %2").arg(hostName, mHostAddress.toString())));
             if (!mConnectViaProxy) {
                 postMessage(qsl("%1\n").arg(tr("[ INFO ]  - Trying to connect to %1:%2 ...").arg(mHostAddress.toString(), QString::number(hostPort))));
             } else {
