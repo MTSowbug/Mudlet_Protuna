@@ -1547,7 +1547,7 @@ bool TMap::validatePotentialMapFile(QFile& file, QDataStream& ifs)
                              "\"%2\",\n"
                              "please wait...").arg(version).arg(file.fileName());
         appendErrorMsg(tr(R"([ INFO ]  - Reading map. Format version: %1. File: "%2".)").arg(version).arg(file.fileName()), false);
-        postMessage(infoMsg);
+        //postMessage(infoMsg);
     }
     mVersion = version;
     mSaveVersion = mDefaultVersion; // Make the save version the default one - unless the user intervenes
