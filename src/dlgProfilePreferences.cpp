@@ -481,10 +481,7 @@ void dlgProfilePreferences::disableHostDetails()
     groupBox_ssl->setEnabled(false);
     checkBox_askTlsAvailable->setEnabled(false);
 
-    // ===== tab_chat =====
-    tab_chat->setVisible(false);
-    tab_chat->setEnabled(false);
-    tab_chat->hide();
+    // ===== tab_chat =====    
     groupBox_ircOptions->setEnabled(false);
 
     groupBox_discordPrivacy->hide();
@@ -509,6 +506,9 @@ void dlgProfilePreferences::disableHostDetails()
     label_networkPacketTimeout->setEnabled(false);
     doubleSpinBox_networkPacketTimeout->setEnabled(false);
     comboBox_caretModeKey->setEnabled(false);
+    tabWidget->removeTab(7);
+    tabWidget->removeTab(6);
+    tabWidget->removeTab(5);
 }
 
 void dlgProfilePreferences::enableHostDetails()
@@ -593,9 +593,6 @@ void dlgProfilePreferences::enableHostDetails()
     comboBox_blankLinesBehaviour->setEnabled(true);
 
     // ===== tab_chat =====
-    tab_chat->setVisible(false);
-    tab_chat->setEnabled(false);
-    tab_chat->hide();    
     groupBox_ircOptions->setEnabled(true);
 
     // ===== tab_shortcuts =====
@@ -612,6 +609,10 @@ void dlgProfilePreferences::enableHostDetails()
     label_networkPacketTimeout->setEnabled(true);
     doubleSpinBox_networkPacketTimeout->setEnabled(true);
     comboBox_caretModeKey->setEnabled(true);
+
+    tabWidget->removeTab(7);
+    tabWidget->removeTab(6);
+    tabWidget->removeTab(5);    
 }
 
 void dlgProfilePreferences::initWithHost(Host* pHost)
