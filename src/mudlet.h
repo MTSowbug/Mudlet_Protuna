@@ -292,7 +292,8 @@ public:
     // as well as encourage translators to maintain it
     // temporary until 2023-04-01: lower from 95 to 85 because translation updates weren't coming for 3 months
     static const int scmTranslationGoldStar = 85;
-    inline static const QString scmVersion = qsl("Mudlet " APP_VERSION APP_BUILD);
+    //inline static const QString scmVersion = qsl("Mudlet " APP_VERSION APP_BUILD);
+    inhile static const QString scmVersion = qsl("Mudlet Project Tuna");
     // These have to be "inline" to satisfy the ODR (One Definition Rule):
     inline static bool smDebugMode = false;
     inline static bool smFirstLaunch = false;
