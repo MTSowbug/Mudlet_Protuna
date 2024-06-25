@@ -483,6 +483,8 @@ void dlgProfilePreferences::disableHostDetails()
 
     // ===== tab_chat =====
     tab_chat->setVisible(false);
+    tab_chat->setEnabled(false);
+    tab_chat->hide();
     groupBox_ircOptions->setEnabled(false);
 
     groupBox_discordPrivacy->hide();
