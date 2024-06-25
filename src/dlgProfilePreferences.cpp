@@ -482,6 +482,7 @@ void dlgProfilePreferences::disableHostDetails()
     checkBox_askTlsAvailable->setEnabled(false);
 
     // ===== tab_chat =====
+    tab_chat->setEnabled(false);
     groupBox_ircOptions->setEnabled(false);
 
     groupBox_discordPrivacy->hide();
