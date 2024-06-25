@@ -1884,9 +1884,10 @@ you can use it but there could be issues with aligning columns of text</string>
       </layout>
      </widget>
      <widget class="QWidget" name="tab_mapper">
-      <attribute name="title">
+      <!-- <attribute name="title">
        <string>Mapper</string>
-      </attribute>
+      </attribute> -->
+      <attribute name="title><string></string></attribute>
       <layout class="QVBoxLayout" name="vBoxLayout_tab_mapper">
        <item>
         <widget class="QGroupBox" name="groupBox_mapFiles">
@@ -2315,9 +2316,9 @@ you can use it but there could be issues with aligning columns of text</string>
       </layout>
      </widget>
      <widget class="QWidget" name="tab_mapperColors">
-      <attribute name="title">
+      <!-- <attribute name="title">
        <string>Mapper colors</string>
-      </attribute>
+      </attribute> -->
       <layout class="QVBoxLayout" name="vBoxLayout_tab_mapperColors">
        <item>
         <widget class="QGroupBox" name="groupBox_mapperColors">
