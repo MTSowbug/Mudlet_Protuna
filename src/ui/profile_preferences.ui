@@ -2314,7 +2314,7 @@ you can use it but there could be issues with aligning columns of text</string>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tab_mapperColors">
+     <!-- <widget class="QWidget" name="tab_mapperColors">
       <attribute name="title">
        <string>Mapper colors</string>
       </attribute>
@@ -2756,7 +2756,7 @@ you can use it but there could be issues with aligning columns of text</string>
         </spacer>
        </item>
       </layout>
-     </widget>
+     </widget> -->
      <widget class="QWidget" name="tab_chat">
       <attribute name="title">
        <string>Chat</string>
