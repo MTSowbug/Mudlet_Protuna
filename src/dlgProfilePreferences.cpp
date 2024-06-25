@@ -482,7 +482,7 @@ void dlgProfilePreferences::disableHostDetails()
     checkBox_askTlsAvailable->setEnabled(false);
 
     // ===== tab_chat =====
-    tab_chat->setEnabled(false);
+    tab_chat->setVisible(false);
     groupBox_ircOptions->setEnabled(false);
 
     groupBox_discordPrivacy->hide();
@@ -591,6 +591,7 @@ void dlgProfilePreferences::enableHostDetails()
     comboBox_blankLinesBehaviour->setEnabled(true);
 
     // ===== tab_chat =====
+    tab_chat->setVisible(false);
     groupBox_ircOptions->setEnabled(true);
 
     // ===== tab_shortcuts =====
