@@ -96,14 +96,14 @@
     <string>Tools</string>
     </property>
     <addaction name="dactionScriptEditor"/>
-    <addaction name="dactionShowErrors"/>
-    <addaction name="dactionShowMap"/>
-    <addaction name="dactionInputLine"/>
+    <!-- <addaction name="dactionShowErrors"/> -->
+    <!-- <addaction name="dactionShowMap"/> -->
+    <!-- <addaction name="dactionInputLine"/> -->
     <!-- <addaction name="dactionNotepad"/> -->
     <!-- <addaction name="dactionLiveHelpChat"/> -->
     <addaction name="dactionPackageManager"/>
-    <addaction name="dactionReplay"/>
-    <addaction name="dactionModuleManager"/>
+    <!-- <addaction name="dactionReplay"/> -->
+    <!-- <addaction name="dactionModuleManager"/> -->
     <addaction name="dactionPackageExporter"/>
     <addaction name="dactionOptions"/>
    </widget>
