@@ -506,9 +506,13 @@ void dlgProfilePreferences::disableHostDetails()
     label_networkPacketTimeout->setEnabled(false);
     doubleSpinBox_networkPacketTimeout->setEnabled(false);
     comboBox_caretModeKey->setEnabled(false);
-    //tabWidget->removeTab(7);
-    //tabWidget->removeTab(6);
-    //tabWidget->removeTab(5);
+    
+    tabWidget->removeTab(9); //Shortcuts
+    tabWidget->removeTab(8); //Connection
+    tabWidget->removeTab(7); //Chat
+    tabWidget->removeTab(6); //Mapper colors
+    tabWidget->removeTab(5); //Mapper
+    tabWidget->removeTab(3); //Editor
 }
 
 void dlgProfilePreferences::enableHostDetails()
@@ -610,9 +614,12 @@ void dlgProfilePreferences::enableHostDetails()
     doubleSpinBox_networkPacketTimeout->setEnabled(true);
     comboBox_caretModeKey->setEnabled(true);
 
-    // tabWidget->removeTab(7);
-    //tabWidget->removeTab(6);
-    //tabWidget->removeTab(5);    
+    tabWidget->removeTab(9); //Shortcuts
+    tabWidget->removeTab(8); //Connection
+    tabWidget->removeTab(7); //Chat
+    tabWidget->removeTab(6); //Mapper colors
+    tabWidget->removeTab(5); //Mapper
+    tabWidget->removeTab(3); //Editor
 }
 
 void dlgProfilePreferences::initWithHost(Host* pHost)
