@@ -1887,7 +1887,7 @@ you can use it but there could be issues with aligning columns of text</string>
       <!-- <attribute name="title">
        <string>Mapper</string>
       </attribute> -->
-      <attribute name="title><string></string></attribute>
+      <attribute name="title"><string></string></attribute>
       <layout class="QVBoxLayout" name="vBoxLayout_tab_mapper">
        <item>
         <widget class="QGroupBox" name="groupBox_mapFiles">
