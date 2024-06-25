@@ -2758,9 +2758,9 @@ you can use it but there could be issues with aligning columns of text</string>
       </layout>
      </widget>
      <widget class="QWidget" name="tab_chat">
-      <attribute name="title">
+      <!-- <attribute name="title">
        <string>Chat</string>
-      </attribute>
+      </attribute> -->
       <layout class="QVBoxLayout" name="verticalLayout_tab_chat">
        <item>
         <widget class="QGroupBox" name="groupBox_ircOptions">
