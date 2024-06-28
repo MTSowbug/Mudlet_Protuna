@@ -707,7 +707,8 @@ private:
     // Argument to QDateTime::toString(...) to format the elapsed time display
     // on the mpToolBarReplay:
     QString mTimeFormat;
-    controlsVisibility mToolbarVisibility = visibleAlways;
+    //controlsVisibility mToolbarVisibility = visibleAlways;
+    controlsVisibility mToolbarVisibility = visibleNever;
     QList<QPointer<QTranslator>> mTranslatorsLoadedList;
     // An encapsulation of the mInterfaceLanguage in a form that Qt uses to
     // hold all the details:
